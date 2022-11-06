@@ -11,6 +11,7 @@ import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import {Routes, Route} from 'react-router-dom'
 import ContactPage from './pages/ContactPage';
 import Homepage from './pages/Homepage';
+import CampsiteDetailPage from './pages/CampsiteDetailPage';
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
               <Route path='/' element={<Homepage />}></Route>
               <Route path='contact' element={<ContactPage />}></Route>
               <Route path='directory' element={<CampsitesDirectoryPage />}></Route>
+              <Route path='directory/:campsiteId' element={<CampsiteDetailPage />}></Route>
             </Routes>
-            
             <Footer />
         </div>
   );
